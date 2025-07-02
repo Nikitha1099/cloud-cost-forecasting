@@ -182,25 +182,28 @@ Here’s how this prediction service can be used in real-world scenarios:
 ## API Usage
 Endpoint:
 <pre>
-http
+#### http
 POST /predict
 </pre>
 
 ## Headers:
+<pre>
 Content-Type: application/json
-'''
-'''
+</pre>
+
 ## Body:
+<pre>
 {
   "cpu": 4,
   "memory": 16,
   "storage": 500
 }
-'''
+</pre>
+
 ## Response:
-'''
+<pre>
 {
   "predicted_cost": 182.50
 }
-```
+</pre>
 
