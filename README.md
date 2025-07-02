@@ -128,26 +128,24 @@ cd cloud-cost-forecasting
 <pre>
 python -m venv venv
 venv\Scripts\activate     # On Windows
-### OR
+## OR
 source venv/bin/activate # On macOS/Linux
 </pre>
 
 ### 4. Install Dependencies
-'''bash
+<pre>
 pip install -r requirements.txt
-'''
+</pre>
 
 ### 5. Train the ML Model
-'''bash
+<pre>
 python ml/train_model.py
-'''
+</pre>
 
 This creates a trained cloud_cost_model.pkl file under models/.
 
 ### 6. Launch FastAPI Server
-'''bash
-uvicorn app:app --reload
-'''
+<pre> '''bash uvicorn app:app --reload''' </pre>
 
 Go to browser: http://127.0.0.1:8000/docs
 You'll see Swagger UI for sending predictions.
