@@ -58,29 +58,21 @@ This tool allows the team to simulate and compare different resource combination
 ---
 
 ## 🗂️ Folder Structure
-cloud-cost-forecasting/
-│
-├── ml/
-│   └── train_model.py          # Trains ML model
-│
-├── data/
-│   └── cloud_cost_data.csv     # Sample input data
-│
-├── models/
-│   └── cloud_cost_model.pkl    # Saved trained model
-│
-├── app.py                      # FastAPI app for predictions
-├── requirements.txt            # Project dependencies
-├── README.md                   # Project documentation
-└── LICENSE                     # MIT License
+📁 Folder Structure
+<pre> cloud-cost-forecasting/ ├── ml/ │ └── train_model.py # Trains the ML model │ ├── data/ │ └── cloud_cost_data.csv # Sample cloud cost input data │ ├── models/ │ └── cloud_cost_model.pkl # Trained and serialized model │ ├── app.py # FastAPI app to serve predictions ├── requirements.txt # Python package dependencies ├── README.md # Project documentation └── LICENSE # MIT License </pre>
 ---
-📄 License
-This project is licensed under the MIT License.
+
+## 📄 License
+
+This project is licensed under the **MIT License**.  
+See the [LICENSE](./LICENSE) file for more details.
 
 ---
-🙋‍♀️ Author
-Nikitha — Passionate about AI, MLOps & Cloud.
-Reach out via GitHub or LinkedIn to collaborate.
+## 👩‍💻 Author
+
+**Nikitha** — Passionate about **AI, MLOps & Cloud** technologies.  
+Connect on [GitHub](https://github.com/Nikitha1099) or [LinkedIn](https://www.linkedin.com/in/nikitha-pyata-b610b5193/) to collaborate.
+
 
 ---
 
