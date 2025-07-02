@@ -181,11 +181,11 @@ Here’s how this prediction service can be used in real-world scenarios:
 ---
 ## API Usage
 Endpoint:
-'''
+<pre>
 http
 POST /predict
-'''
-'''
+</pre>
+
 ## Headers:
 Content-Type: application/json
 '''
