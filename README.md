@@ -120,7 +120,7 @@ If not, install from: https://www.python.org/downloads/
 
 ### 2. Clone the Repository
 ```bash
-git clone https://github.com/Nikitha1099/cloud-cost-forecasting.git<br>
+git clone https://github.com/Nikitha1099/cloud-cost-forecasting.git
 cd cloud-cost-forecasting
 ```
 
@@ -182,16 +182,15 @@ Here’s how this prediction service can be used in real-world scenarios:
 ## API Usage
 Endpoint:
 <pre>
-#### http
 POST /predict
 </pre>
 
-## Headers:
+#### Headers:
 <pre>
 Content-Type: application/json
 </pre>
 
-## Body:
+### Body:
 <pre>
 {
   "cpu": 4,
@@ -200,7 +199,7 @@ Content-Type: application/json
 }
 </pre>
 
-## Response:
+### Response:
 <pre>
 {
   "predicted_cost": 182.50
