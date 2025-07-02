@@ -112,7 +112,7 @@ cloud-cost-forecasting/
 ### 1. Install Python
 
 Ensure Python 3.9 is installed:
-<pre> '''bash python --version ''' </pre>
+<pre> ```bash python --version ``` </pre>
 
 If not, install from: https://www.python.org/downloads/
 
