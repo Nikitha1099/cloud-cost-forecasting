@@ -58,20 +58,29 @@ This tool allows the team to simulate and compare different resource combination
 ---
 
 ## 🗂️ Folder Structure
-
 cloud-cost-forecasting/
 │
 ├── ml/
-│ └── train_model.py # Trains the ML model and saves it
+│   └── train_model.py          # Trains ML model
 │
 ├── data/
-│ └── cloud_cost_data.csv # Dataset with CPU, RAM, Storage, Cost
+│   └── cloud_cost_data.csv     # Sample input data
 │
 ├── models/
-│ └── cloud_cost_model.pkl # Trained ML model
+│   └── cloud_cost_model.pkl    # Saved trained model
 │
-├── app.py # FastAPI app with POST /predict
-├── requirements.txt # Python dependencies
-├── README.md # Project documentation
-└── LICENSE # MIT License
+├── app.py                      # FastAPI app for predictions
+├── requirements.txt            # Project dependencies
+├── README.md                   # Project documentation
+└── LICENSE                     # MIT License
+---
+📄 License
+This project is licensed under the MIT License.
+
+---
+🙋‍♀️ Author
+Nikitha — Passionate about AI, MLOps & Cloud.
+Reach out via GitHub or LinkedIn to collaborate.
+
+---
 
