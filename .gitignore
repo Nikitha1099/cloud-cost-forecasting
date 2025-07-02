@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+*.pkl
+.vscode/
+.env
+*.log
+
