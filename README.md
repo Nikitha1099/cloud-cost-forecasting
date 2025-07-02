@@ -179,29 +179,26 @@ Here’s how this prediction service can be used in real-world scenarios:
 -   Can be deployed as a microservice or integrated into enterprise systems
 
 ---
-📡 API Usage
+## API Usage
 Endpoint:
+'''
 http
-Copy
-Edit
 POST /predict
-Headers:
-pgsql
-Copy
-Edit
+'''
+'''
+## Headers:
 Content-Type: application/json
-Body:
-json
-Copy
-Edit
+'''
+'''
+## Body:
 {
   "cpu": 4,
   "memory": 16,
   "storage": 500
 }
-Response:
-```json
-Edit
+'''
+## Response:
+'''
 {
   "predicted_cost": 182.50
 }
