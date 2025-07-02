@@ -40,10 +40,6 @@ We model the problem as a **regression task**, where:
 
 ---
 
-
-
----
-
 ##  Real-World Impact
 
 ###  Why Predict Cloud Costs?
@@ -111,9 +107,6 @@ cloud-cost-forecasting/
 ├── README.md                    # Project documentation
 └── LICENSE                      # MIT License
 ```
-
----
-
 ## 🛠️ Installation and Setup
 
 ### 1. Install Python
@@ -122,6 +115,7 @@ Ensure Python 3.9 is installed:
 
 ```bash
 python --version
+'''
 
 If not, install from: https://www.python.org/downloads/
 
@@ -129,6 +123,7 @@ If not, install from: https://www.python.org/downloads/
 '''bash
 git clone https://github.com/Nikitha1099/cloud-cost-forecasting.git
 cd cloud-cost-forecasting
+'''
 
 ### 3. Create Virtual Environment
 '''bash
@@ -136,20 +131,24 @@ python -m venv venv
 venv\Scripts\activate     # On Windows
 # OR
 source venv/bin/activate # On macOS/Linux
+'''
 
 ### 4. Install Dependencies
 '''bash
 pip install -r requirements.txt
+'''
 
 ### 5. Train the ML Model
 '''bash
 python ml/train_model.py
+'''
 
 This creates a trained cloud_cost_model.pkl file under models/.
 
 ### 6. Launch FastAPI Server
 '''bash
 uvicorn app:app --reload
+'''
 
 Go to browser: http://127.0.0.1:8000/docs
 You'll see Swagger UI for sending predictions.
