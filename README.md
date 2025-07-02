@@ -119,18 +119,18 @@ python --version
 If not, install from: https://www.python.org/downloads/
 
 ### 2. Clone the Repository
-'''bash
-git clone https://github.com/Nikitha1099/cloud-cost-forecasting.git
+<pre>
+git clone https://github.com/Nikitha1099/cloud-cost-forecasting.git<br>
 cd cloud-cost-forecasting
-'''
+</pre>
 
 ### 3. Create Virtual Environment
-'''bash
+<pre>
 python -m venv venv
 venv\Scripts\activate     # On Windows
-# OR
+### OR
 source venv/bin/activate # On macOS/Linux
-'''
+</pre>
 
 ### 4. Install Dependencies
 '''bash
