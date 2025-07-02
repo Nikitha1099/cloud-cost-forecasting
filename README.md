@@ -129,7 +129,7 @@ cd cloud-cost-forecasting
 python -m venv venv
 venv\Scripts\activate     # On Windows
 ```
-## OR
+#### OR
 ```bash
 source venv/bin/activate # On macOS/Linux
 ```
@@ -154,6 +154,33 @@ Go to browser: http://127.0.0.1:8000/docs
 You'll see Swagger UI for sending predictions.
 
 ---
+### API Usage
+Endpoint:
+<pre>
+POST /predict
+</pre>
+
+Headers:
+<pre>
+Content-Type: application/json
+</pre>
+
+Body:
+<pre>
+{
+  "cpu": 4,
+  "memory": 16,
+  "storage": 500
+}
+</pre>
+
+Response:
+<pre>
+{
+  "predicted_cost": 182.50
+}
+</pre>
+---
 ##  Example Use Cases
 Here’s how this prediction service can be used in real-world scenarios:
 
@@ -177,32 +204,4 @@ Here’s how this prediction service can be used in real-world scenarios:
 -   Serves as a foundation for deeper cloud cost optimization
 
 -   Can be deployed as a microservice or integrated into enterprise systems
-
 ---
-## API Usage
-Endpoint:
-<pre>
-POST /predict
-</pre>
-
-#### Headers:
-<pre>
-Content-Type: application/json
-</pre>
-
-### Body:
-<pre>
-{
-  "cpu": 4,
-  "memory": 16,
-  "storage": 500
-}
-</pre>
-
-### Response:
-<pre>
-{
-  "predicted_cost": 182.50
-}
-</pre>
-
