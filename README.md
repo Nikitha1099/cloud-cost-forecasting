@@ -119,34 +119,37 @@ python --version
 If not, install from: https://www.python.org/downloads/
 
 ### 2. Clone the Repository
-<pre>
+```bash
 git clone https://github.com/Nikitha1099/cloud-cost-forecasting.git<br>
 cd cloud-cost-forecasting
-</pre>
+```
 
 ### 3. Create Virtual Environment
-<pre>
+```bash
 python -m venv venv
 venv\Scripts\activate     # On Windows
+```
 ## OR
+```bash
 source venv/bin/activate # On macOS/Linux
-</pre>
+```
 
 ### 4. Install Dependencies
-<pre>
+```bash
 pip install -r requirements.txt
-</pre>
+```
 
 ### 5. Train the ML Model
-<pre>
+```bash
 python ml/train_model.py
-</pre>
+```
 
 This creates a trained cloud_cost_model.pkl file under models/.
 
 ### 6. Launch FastAPI Server
-<pre> '''bash uvicorn app:app --reload''' </pre>
-
+```bash 
+uvicorn app:app --reload
+```
 Go to browser: http://127.0.0.1:8000/docs
 You'll see Swagger UI for sending predictions.
 
@@ -154,18 +157,18 @@ You'll see Swagger UI for sending predictions.
 ##  Example Use Cases
 Here’s how this prediction service can be used in real-world scenarios:
 
-- Pre-Provisioning Checks: Estimate cost before launching instances.
+- **Pre-Provisioning Checks**: Estimate cost before launching instances.
 
-- Developer Portals: Let devs choose resources and preview pricing.
+- **Developer Portals**: Let devs choose resources and preview pricing.
 
-- Internal Dashboards: Integrate with tools like Grafana or Streamlit.
+- **Internal Dashboards**: Integrate with tools like Grafana or Streamlit.
 
-- Budget Alerts: Combine with automation to warn about overages.
+- **Budget Alerts**: Combine with automation to warn about overages.
 
-- Resource Scaling: Simulate the financial impact of scale-up/scale-down.
+- **Resource Scaling**: Simulate the financial impact of scale-up/scale-down.
 
 ## 📈 Impact and Significance
--   This project represents a real-world FinOps tool.
+-   This project represents a real-world **FinOps** tool.
 
 -   Makes cloud usage predictable and transparent
 
@@ -176,4 +179,31 @@ Here’s how this prediction service can be used in real-world scenarios:
 -   Can be deployed as a microservice or integrated into enterprise systems
 
 ---
+📡 API Usage
+Endpoint:
+http
+Copy
+Edit
+POST /predict
+Headers:
+pgsql
+Copy
+Edit
+Content-Type: application/json
+Body:
+json
+Copy
+Edit
+{
+  "cpu": 4,
+  "memory": 16,
+  "storage": 500
+}
+Response:
+```json
+Edit
+{
+  "predicted_cost": 182.50
+}
+```
 
